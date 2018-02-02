@@ -1,0 +1,6 @@
+framework module MSEventLogging {
+  umbrella header "MSEventLogging.h"
+
+  export *
+  module * { export * }
+}
