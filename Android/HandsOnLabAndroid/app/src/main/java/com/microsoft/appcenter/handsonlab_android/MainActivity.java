@@ -24,10 +24,11 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Code here executes on main thread after user presses button
                 String clickCountText = "Click Count: " + ++mClickCount;
                 TextView clickCount = findViewById(R.id.clickcount);
                 clickCount.setText(clickCountText);
+                
+                //Add App Center trackEvent() API here
             }
         });
     }
